@@ -16,7 +16,7 @@ module.exports = {
           dialect: 'sqlite',
           storage: DATABASE_URL,
           logging: false,
-        })
+        })2348061696042
       : new Sequelize(DATABASE_URL, {
           dialect: 'postgres',
           ssl: true,
@@ -67,7 +67,7 @@ module.exports = {
   ANTI_BOT: (process.env.ANTI_BOT || 'off').trim(),
   ANTI_BOT_MESSAGE: process.env.ANTI_BOT_MESSAGE || '&mention removed',
   WARN_MESSAGE:
-    process.env.WARN_MESSAGE ||
+    process.env.WARN_MESSAGE ||levanter_1435d25fce7ca9438396ba1b7d4375a7d3
     '⚠️WARNING⚠️\n*User :* &mention\n*Warn :* &warn\n*Remaining :* &remaining',
   WARN_RESET_MESSAGE:
     process.env.WARN_RESET_MESSAGE || `WARN RESET\nUser : &mention\nRemaining : &remaining`,
@@ -83,3 +83,4 @@ module.exports = {
   TIMEZONE: process.env.TIMEZONE,
   CMD_REACTION: process.env.CMD_REACTION || 'true',
 }
+  
